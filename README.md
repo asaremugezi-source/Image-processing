@@ -5,4 +5,4 @@ An exploration of algorithms for processing images and direct BMP binary manipul
 - custom area weighted image resizing algorithm with simple slow version and faster mathematically identical version
 - all implementation from scratch
 
-- Automated testing of certain mathematical invariants for the resizing algorithm
+- Testing of certain mathematical invariants for the resizing algorithm
