@@ -9,7 +9,7 @@ def rescale_slow(grid, new_width, new_height):
     for i in range(h):
         for j in range(w):
             for k in range(3):
-                new_grid[i//old_width][j//old_height][k] += grid[i//new_height][j//new_width][k]
+                new_grid[i//old_height][j//old_width][k] += grid[i//new_height][j//new_width][k]
     for i in range(new_height):
         for j in range(new_width):
             for k in range(3):
