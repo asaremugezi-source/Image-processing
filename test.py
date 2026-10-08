@@ -14,11 +14,7 @@ for g in (transformations.rescale, transformations.rescale_slow):
             grid = [[[f(),f(),f()] for x in range(i)] for y in range(j)]
             for k in range(start, end):
                 for l in range(start, end):
-                    if grid != g(g(grid, i*k, j*l),i,j):
-                        print("test failed for grid: ")
-                        print(grid)
-                        print(k, l)
-                        failed += 1
+                    assert(grid == g(g(grid, i*k, j*l),i,j))
 print(str(failed) + " tests failed.")
 failed = 0
 start = 1
@@ -29,14 +25,8 @@ for i in range(start, end):
             grid = [[[f(),f(),f()] for x in range(i)] for y in range(j)]
             for k in range(start, end):
                 for l in range(start, end):
-                    if transformations.rescale(grid,k,l) != transformations.rescale_slow(grid,k,l):
-                        print("test failed for grid: ")
-                        print(grid)
-                        print()
-                        print(transformations.rescale(grid,k,l))
-                        print()
-                        print(transformations.rescale_slow(grid,k,l))
-                        failed += 1
+                    assert(transformations.rescale(grid,k,l) == transformations.rescale_slow(grid,k,l))
+                    
 print(str(failed) + " tests failed.")
 
 
