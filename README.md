@@ -6,3 +6,4 @@ An exploration of algorithms for processing images and direct BMP binary manipul
 - all implementation from scratch
 
 - Testing of certain mathematical invariants for the resizing algorithm
+- Only works at present for 24 bit bitmap images
