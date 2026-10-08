@@ -1,6 +1,8 @@
 # Image-processing
-An exploration of algorithms for processing images in the attempt to make a recursive meme. 
+An exploration of algorithms for processing images and direct BMP binary manipulation in Python
 
-Images are taken from the .bmp file format, which is the simplest encoding of an image basically just storing the raw pixel value, .png and .jpg use compression which would make an algorithm for processing these much more complicated.
+- BMP reading and writing by direct binary manipulation
+- custom area weighted image resizing algorithm with simple slow version and faster mathematically identical version
+- all implementation from scratch
 
-We note that in the current version not all .bmp files are supported but only those with the standard 24bit colour encoding.
+- Testing of certain mathematical invariants for the resizing algorithm
